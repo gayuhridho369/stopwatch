@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 35px 0;
+    font-size: 16px;
+    background: #212121;
+    color: #e0e0e0;
+}
+
+.outer-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 275px;
+    height: 275px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #212121;
+    box-shadow: inset 5px 5px 10px #141414,
+        inset -5px -5px 10px #2e2e2e;
+}
+
+.inner-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background: #212121;
+    box-shadow: 5px 5px 10px #141414,
+        -5px -5px 10px #2e2e2e;
+}
+
+.minute {
+    font-size: 64px;
+}
+
+.second,
+.millisecond,
+.colon {
+    font-size: 32px;
+}
+
+.second,
+.millisecond {
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 16px auto;
+}
+
+.button {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    color: #e0e0e0;
+    border-radius: 50%;
+    background: #212121;
+    box-shadow: 3px 3px 7px #141414,
+        -3px -3px 7px #2e2e2e;
+}
+
+button:disabled,
+button[disabled] {
+    color: #434343;
+    border-radius: 50%;
+    background: #212121;
+    box-shadow: inset 3px 3px 7px #141414,
+        inset -3px -3px 7px #2e2e2e;
+}
+
+button:active {
+    transform: scale(90%);
+    outline: none;
+}
+
+.laps-wrapper {
+    position: relative;
+
+    padding: 10px 0;
+    border-radius: 15px;
+    background: #212121;
+    box-shadow: inset 5px 5px 10px #141414,
+        inset -5px -5px 10px #2e2e2e;
+}
+
+.laps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    list-style: none;
+    color: #e0e0e0;
+    overflow: auto;
+}
+
+
+.laps::-webkit-scrollbar {
+    display: none;
+}
+
+.lap-item {
+    display: block;
+    font-size: 18px;
+    margin: 5px 10px;
+    text-align: center;
+    background: #212121;
+}
+
+.number {
+    color: #e0e0e0;
+    display: inline-block;
+    text-align: start;
+    width: 30px;
+}
+
+.timestamp {
+    display: inline-block;
+    width: 100px;
+    text-align: end;
+    margin-left: 20px;
+}
